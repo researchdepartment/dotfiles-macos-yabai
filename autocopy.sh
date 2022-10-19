@@ -7,4 +7,6 @@ cp -fvr ~/.config/spacebar .config/
 cp -fvr ~/.config/skhd .config/
 cp -fvr ~/.config/yabai .config/
 
+cp -fv ~/.ssh/config .ssh/
+
 defaults export com.lwouis.alt-tab-macos .plist/com.lwouis.alt-tab.macos.plist

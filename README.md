@@ -43,6 +43,15 @@ echo 'include "/opt/homebrew/Cellar/nano/*/share/nano/*.nanorc"' >> ~/.nanorc
 brew services start tor
 ```
 
+***note:** [tell skhd to use a different shell](https://github.com/koekeishiya/skhd/issues/42#issuecomment-401886533)*
+
+### set hostname:
+```sh
+sudo scutil --set LocalHostName codekitty
+sudo scutil --set HostName codekitty
+sudo scutil --set ComputerName codekitty
+```
+
 ### disable desktop icons:
 ```sh
 defaults write com.apple.finder CreateDesktop false; killall Finder
@@ -52,13 +61,14 @@ defaults write com.apple.finder CreateDesktop false; killall Finder
 ```sh
 defaults write com.apple.Dock size-immutable -bool true; killall Dock
 ```
-***enable resizing of dock:***
-```sh
-defaults write com.apple.Dock size-immutable -bool no; killall Dock
-```
 
 ### import settings:
 ```sh
 # AltTab
 defaults import com.lwouis.alt-tab-macos .plist/com.lwouis.alt-tab.macos.plist
+```
+
+### show active python binary:
+```sh
+type -a python
 ```
