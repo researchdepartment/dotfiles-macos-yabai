@@ -18,6 +18,8 @@ brew install cmacrae/formulae/spacebar
 brew install --cask font-fontawesome
 brew install neofetch
 brew install fish
+brew tap wez/wezterm
+brew install --cask wez/wezterm/wezterm
 
 # start ux
 brew services start yabai
