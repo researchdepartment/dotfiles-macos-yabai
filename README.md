@@ -31,7 +31,7 @@ brew install youtube-dl ffmpeg
 brew install git gh
 brew install watch
 brew install ncdu htop
-brew install authssh mosh
+brew install autossh mosh
 brew install tor torsocks
 brew install bmon arp-scan
 brew install python@3.9

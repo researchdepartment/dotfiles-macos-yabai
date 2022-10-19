@@ -1,4 +1,5 @@
 cp -fv ~/.wezterm.lua .
+cp -fv ~/.gitconfig .
 
 cp -fvr ~/.config/fish .config/
 cp -fvr ~/.config/htop .config/
