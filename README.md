@@ -27,26 +27,37 @@ brew services start skhd
 brew services start spacebar
 
 # util
-brew install youtube-dl
-brew install ffmpeg
-brew install git
-brew install gh
+brew install youtube-dl ffmpeg
+brew install git gh
 brew install watch
-brew install ncdu
-brew install bmon
+brew install ncdu htop
+brew install authssh mosh
 brew install tor torsocks
-brew install arp-scan
+brew install bmon arp-scan
 brew install python@3.9
 brew install --cask alt-tab
-brew install nano
-brew install nanorc
+brew install nano nanorc
 echo 'include "/opt/homebrew/Cellar/nano/*/share/nano/*.nanorc"' >> ~/.nanorc
 
 # start tor
 brew services start tor
 ```
 
-## import settings:
+### disable desktop icons:
+```sh
+defaults write com.apple.finder CreateDesktop false; killall Finder
+```
+
+### disable resizing of dock:
+```sh
+defaults write com.apple.Dock size-immutable -bool true; killall Dock
+```
+***enable resizing of dock:***
+```sh
+defaults write com.apple.Dock size-immutable -bool no; killall Dock
+```
+
+### import settings:
 ```sh
 # AltTab
 defaults import com.lwouis.alt-tab-macos .plist/com.lwouis.alt-tab.macos.plist
