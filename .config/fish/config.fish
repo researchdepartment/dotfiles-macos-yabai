@@ -1,6 +1,6 @@
 function fish_greeting
         echo ""
-	neofetch
+	neofetch --config /Users/sysadmin/.config/neofetch/config.conf
 end
 
 set LC_ALL en_GB.UTF-8
@@ -37,5 +37,7 @@ alias gra='git remote add'
 alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
-
+alias ytd='youtube-dl'
+alias ytdf='youtube-dl -f 18'
 set -xg PATH /opt/homebrew/bin /opt/homebrew/opt/python@3.9/libexec/bin /usr/bin /bin /usr/sbin /sbin
+set -xg EDITOR /usr/bin/nano

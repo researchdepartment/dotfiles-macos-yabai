@@ -11,7 +11,7 @@ spacebar -m config padding_right               20
 spacebar -m config spacing_left                25
 spacebar -m config spacing_right               15
 #spacebar -m config text_font                   "Menlo:Regular:12.0"
-spacebar -m config text_font                   "Helvetica Neue:Bold:12.0"
+spacebar -m config text_font                   "JetBrains Mono:Bold:12.0"
 spacebar -m config icon_font                   "Font Awesome 6 Free:Solid:11.0"
 spacebar -m config background_color            0xff000000
 spacebar -m config foreground_color            0xffa8a8a8
@@ -31,8 +31,8 @@ spacebar -m config clock_format                "%A %Y/%m/%d %H:%M %Z"
 spacebar -m config right_shell                 on
 spacebar -m config right_shell_icon            
 spacebar -m config right_shell_command         "dscl . -read "/Users/$(who am i | awk '{print $1}')" RealName | sed -n 's/^ //g;2p'"
-spacebar -m config left_shell                 on
-spacebar -m config left_shell_icon_color      0xffdc7224
-spacebar -m config left_shell_icon            
-spacebar -m config left_shell_command         "/Users/sysadmin/Development/mospos.app/Contents/MacOS/mospos | sha256sum | awk '{print $1}' | head -c 10 &"
+#spacebar -m config left_shell                 on
+#spacebar -m config left_shell_icon_color      0xffdc7224
+#spacebar -m config left_shell_icon            
+#spacebar -m config left_shell_command         "/Users/sysadmin/Development/mospos.app/Contents/MacOS/mospos | sha256sum | awk '{print $1}' | head -c 10 &"
 echo "spacebar configuration loaded.."

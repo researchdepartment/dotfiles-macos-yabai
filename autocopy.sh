@@ -11,3 +11,5 @@ cp -fvr ~/.config/yabai .config/
 cp -fv ~/.ssh/config .ssh/
 
 defaults export com.lwouis.alt-tab-macos .plist/com.lwouis.alt-tab.macos.plist
+rm ./Brewfile
+brew bundle dump --file=./Brewfile

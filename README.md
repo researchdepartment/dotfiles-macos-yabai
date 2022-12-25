@@ -72,3 +72,7 @@ defaults import com.lwouis.alt-tab-macos .plist/com.lwouis.alt-tab.macos.plist
 ```sh
 type -a python
 ```
+
+
+## install everything from the Brewfile
+brew bundle
