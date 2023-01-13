@@ -2,7 +2,7 @@
 
 & more
 
-![desktop](image.png)
+![lockscreen](image0.png) ![workspace](image1.png) ![desktop](image2.png)
 
 ## to-do: 
 * https://github.com/researcx/mospos required for spacebar left_shell_command
