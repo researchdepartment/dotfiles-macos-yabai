@@ -2,7 +2,7 @@
 
 & more
 
-![lockscreen](image0.png) ![workspace](image1.png) ![desktop](image2.png)
+![lockscreen](image0.png) ![desktop](image1.png)
 
 ## to-do: 
 * replace neofetch image_source
@@ -78,5 +78,5 @@ type -a python
 ```
 
 
-## install everything from the Brewfile
+## (optional) install everything from the Brewfile
 brew bundle
