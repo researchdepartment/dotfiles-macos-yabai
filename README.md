@@ -1,11 +1,10 @@
-# macOS + yabai + skhd + spacebar
+# macOS + yabai + skhd + simple-bar
 
 & more
 
 ![lockscreen](image0.png) ![workspace](image1.png) ![desktop](image2.png)
 
 ## to-do: 
-* https://github.com/researcx/mospos required for spacebar left_shell_command
 * replace neofetch image_source
 
 ## install: 
@@ -14,8 +13,7 @@
 # ux
 brew install koekeishiya/formulae/yabai
 brew install koekeishiya/formulae/skhd
-brew install cmacrae/formulae/spacebar
-brew install --cask font-fontawesome
+brew install --cask ubersicht
 brew install neofetch
 brew install fish
 brew tap wez/wezterm
@@ -24,7 +22,7 @@ brew install --cask wez/wezterm/wezterm
 # start ux
 brew services start yabai
 brew services start skhd
-brew services start spacebar
+brew services start ubersicht
 
 # util
 brew install youtube-dl ffmpeg
@@ -44,6 +42,12 @@ brew services start tor
 ```
 
 ***note:** [tell skhd to use a different shell](https://github.com/koekeishiya/skhd/issues/42#issuecomment-401886533)*
+
+### simple-bar:
+```sh
+git clone https://github.com/Jean-Tinland/simple-bar $HOME/Library/Application\ Support/Übersicht/widgets/simple-bar
+```
+**symlink for arm64 chipset:** `sudo ln -s /opt/homebrew/bin/yabai /usr/local/bin/yabai`
 
 ### set hostname:
 ```sh

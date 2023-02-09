@@ -7,7 +7,8 @@ return {
   window_background_opacity = 0.85,
   text_background_opacity = 0.95,
   font = wezterm.font_with_fallback({
-    "JetBrains Mono"
+    "JetBrains Mono NL"
   }),
   font_size = 12,
+  color_scheme = "Red Phoenix (terminal.sexy)", -- Pnevma
 }
