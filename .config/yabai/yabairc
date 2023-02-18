@@ -49,15 +49,13 @@ yabai -m config right_padding                10
 yabai -m config window_gap                   10
 
 # float system preferences
+yabai -m rule --add app="(Finder|Parallels|Windows 11|qView|Netvue|Calculator|Clock)" manage=off
 yabai -m rule --add app='^System Information$' manage=off
 yabai -m rule --add app='^System Preferences$' manage=off
 yabai -m rule --add title='Preferences$' manage=off
 yabai -m rule --add title='^MousePositionWindow$' manage=off
 yabai -m rule --add app='Activity Monitor' manage=off
-yabai -m rule --add app='qView' manage=off
 yabai -m rule --add app='Picture in Picture' manage=off
-yabai -m rule --add app='Netvue' manage=off
-yabai -m rule --add title='Calculator' manage=off
 
 # float settings windows
 yabai -m rule --add title='Settings$' manage=off
